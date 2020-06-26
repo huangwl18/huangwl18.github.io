@@ -30,8 +30,9 @@ td {
   padding: 0.01em;
   border-bottom: 0px solid $light-gray;
   border-right: 0px solid $light-gray;
+  text-align: left;
 }
 
 tr, td, th {
-  vertical-align: middle;
+  vertical-align: left;
 }
