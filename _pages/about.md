@@ -12,7 +12,7 @@ I am a second-year undergraduate student at UC Berkeley studying computer scienc
 
 My research interests include reinforcement learning, robotics, and computer vision. Currently I'm interested in agent-agnostic learning and building general-purpose controllers for robotics.
 
-In my free time, I am also an enthusiastic violinist and a passionate photographer.
+In my free time, I am also an enthusiastic violinist and a passionate photographer. You can view some of the photos I took [here](https://500px.com/huangwl18).
 
 
 Research
