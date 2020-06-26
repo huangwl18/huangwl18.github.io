@@ -18,7 +18,7 @@ In my free time, I am also an enthusiastic violinist and a passionate photograph
 Research
 ======
 
-| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> [webpage](https://wenlong.page) \| [paper](https://wenlong.page) \| [code](https://wenlong.page) \| [talk](https://wenlong.page) |
+| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> *Code and Paper to be released* |
 | <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/3DWINN.jpg"> </figure> | **3D Volumetric Modeling with Introspective Neural Networks**<br/>**Wenlong Huang\***, Brian Lai\*, Weijian Xu, Zhuowen Tu<br/>AAAI 2019 <br/> [paper](https://pages.ucsd.edu/~ztu/publication/aaai19_3dwinn.pdf) |
 
 Education
@@ -34,7 +34,7 @@ Education
 
 \*Graduate-Level Courses
 
-Recorded Talks
+<!-- Recorded Talks
 ======
-ICML [Virtual Talk](https://wenlong.page) on Shared Modular Policies for Agent-Agnostic Control
+ICML [Virtual Talk](https://wenlong.page) on Shared Modular Policies for Agent-Agnostic Control -->
 
