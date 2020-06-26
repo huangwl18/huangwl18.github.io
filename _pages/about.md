@@ -15,7 +15,7 @@ My research interests include reinforcement learning, robotics, and computer vis
 In my free time, I am also an enthusiastic violinist and a passionate photographer. You can view some of the photos I took [here](https://500px.com/huangwl18).
 
 
-Research
+Publications
 ======
 
 | <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> *Code and Paper to be released* |
