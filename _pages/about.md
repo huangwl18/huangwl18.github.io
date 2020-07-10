@@ -18,7 +18,7 @@ In my free time, I am also an enthusiastic violinist and a passionate photograph
 Publications
 ======
 
-| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> *Code and Paper to be released* |
+| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> [webpage](https://wenlong.page/modular-rl/) \| [paper](https://www.cs.cmu.edu/~dpathak/papers/modular-rl.pdf) \| [code](https://github.com/huangwl18/modular-rl)
 | <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/3DWINN.jpg"> </figure> | **3D Volumetric Modeling with Introspective Neural Networks**<br/>**Wenlong Huang\***, Brian Lai\*, Weijian Xu, Zhuowen Tu<br/>AAAI 2019 <br/> [paper](https://pages.ucsd.edu/~ztu/publication/aaai19_3dwinn.pdf) |
 
 Education
