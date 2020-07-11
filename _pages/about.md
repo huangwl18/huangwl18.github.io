@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am a second-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/) and [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/). Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on 3D generative modeling as a high school researcher at UCSD. <br>
+I am a second-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/) and [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/) on reinforcement learning and robotics. Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on 3D generative modeling as a high school researcher at UCSD. <br>
 
-My research interests include reinforcement learning, robotics, and computer vision. Currently I'm interested in agent-agnostic learning and building general-purpose controllers for robotics.
+My research interests include reinforcement learning, robotics, and computer vision. Currently I'm interested in building general-purpose controllers for robotics.
 
 In my free time, I am also an enthusiastic violinist and a passionate photographer. You can view some of the photos I took [here](https://500px.com/huangwl18).
 
@@ -18,7 +18,7 @@ In my free time, I am also an enthusiastic violinist and a passionate photograph
 Publications
 ======
 
-| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> [webpage](https://wenlong.page/modular-rl/) \| [paper](https://www.cs.cmu.edu/~dpathak/papers/modular-rl.pdf) \| [code](https://github.com/huangwl18/modular-rl) \| [demo video](https://youtu.be/9YiZZ_8guq8) \| [ora talk](https://youtu.be/gEeQ0nzalzo)
+| <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/modularRL.gif"> </figure> | **One Policy to Control Them All:<br/>Shared Modular Policies for Agent-Agnostic Control**<br/>**Wenlong Huang**, Igor Mordatch, Deepak Pathak<br/>ICML 2020 <br/> [webpage](https://wenlong.page/modular-rl/) \| [paper](https://www.cs.cmu.edu/~dpathak/papers/modular-rl.pdf) \| [code](https://github.com/huangwl18/modular-rl) \| [demo video](https://youtu.be/9YiZZ_8guq8) \| [oral talk](https://youtu.be/gEeQ0nzalzo)
 | <figure style="width: 200px"> <img src="{{ site.url }}{{ site.baseurl }}/images/3DWINN.jpg"> </figure> | **3D Volumetric Modeling with Introspective Neural Networks**<br/>**Wenlong Huang\***, Brian Lai\*, Weijian Xu, Zhuowen Tu<br/>AAAI 2019 <br/> [paper](https://pages.ucsd.edu/~ztu/publication/aaai19_3dwinn.pdf) |
 
 Education
