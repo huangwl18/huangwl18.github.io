@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/), and [Dr. Igor Mordatch](https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en)] on reinforcement learning and robotics. Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on computer vision as a high school researcher at UCSD. <br>
+I am a third-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/), and [Dr. Igor Mordatch](https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en) on reinforcement learning and robotics. Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on computer vision as a high school researcher at UCSD. <br>
 
 My research interests include reinforcement learning, robotics, and computer vision. Currently I'm interested in building general-purpose controllers for robotics.
 
