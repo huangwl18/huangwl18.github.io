@@ -26,7 +26,7 @@ Education
 
 <font size="5.0"><b>UC Berkeley</b></font>
 *B.A. in Computer Science, 2018 - Present*<br>
-**Coursework**: \*Deep Reinforcement Learning (CS 285), \*Computer Vision (CS 280), \*Natural Language Processing (CS 288), Machine Learning (CS 189), Computer Graphics (CS 184), Computational Photography (CS 194), Algorithms (CS 170), Database (CS 186), Intro to AI (CS 188), Statistics (STAT 135), Machine Structures (CS 61C), Data Structures (CS 61B), Discrete Math (CS 70)
+**Coursework**: \*Deep Reinforcement Learning (CS 285), \*Computer Vision (CS 280), \*Natural Language Processing (CS 288), Machine Learning (CS 189), Full Stack Deep Learning (CS 194), Computer Graphics (CS 184), Computational Photography (CS 194), Algorithms (CS 170), Database (CS 186), Intro to AI (CS 188), Statistics (STAT 135), Machine Structures (CS 61C), Data Structures (CS 61B), Discrete Math (CS 70)
 
 <font size="5.0"><b>UC San Diego</b></font>
 *High School Concurrent Enrollment, 2016 - 2018*<br>
