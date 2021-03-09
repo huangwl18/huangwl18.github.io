@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/) and [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/) on reinforcement learning and robotics. Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on 3D generative modeling as a high school researcher at UCSD. <br>
+I am a third-year undergraduate student at UC Berkeley studying computer science, where I am also an undergraduate researcher at [BAIR](https://bair.berkeley.edu), working with [Professor Pieter Abbeel](https://people.eecs.berkeley.edu/~pabbeel/), [Professor Deepak Pathak](https://people.eecs.berkeley.edu/~pathak/), and [Dr. Igor Mordatch(https://scholar.google.com/citations?user=Vzr1RukAAAAJ&hl=en)] on reinforcement learning and robotics. Earlier, I was very fortunate to work with [Professor Zhuowen Tu](http://pages.ucsd.edu/~ztu) on computer vision as a high school researcher at UCSD. <br>
 
 My research interests include reinforcement learning, robotics, and computer vision. Currently I'm interested in building general-purpose controllers for robotics.
 
@@ -26,11 +26,11 @@ Education
 
 <font size="5.0"><b>UC Berkeley</b></font>
 *B.A. in Computer Science, 2018 - Present*<br>
-**Coursework**: \*Deep Reinforcement Learning (CS 285), Machine Learning (CS 189), Computer Graphics (CS 184), Computer Vision and Computational Photography (CS 194), Algorithms (CS 170), Database (CS 186), Intro to AI (CS 188), Statistics (STAT 135), Machine Structures (CS 61C), Data Structures (CS 61B), Discrete Math and Probability (CS 70), Data Science (Data 8)
+**Coursework**: \*Deep Reinforcement Learning (CS 285), \*Computer Vision (CS 280), \*Natural Language Processing (CS 288), Machine Learning (CS 189), Computer Graphics (CS 184), Computational Photography (CS 194), Algorithms (CS 170), Database (CS 186), Intro to AI (CS 188), Statistics (STAT 135), Machine Structures (CS 61C), Data Structures (CS 61B), Discrete Math (CS 70)
 
 <font size="5.0"><b>UC San Diego</b></font>
 *High School Concurrent Enrollment, 2016 - 2018*<br>
-**Coursework**: \*Probabilistic Reasoning and Decision-Making (CSE 250A), \*Automated Reasoning in AI (CSE 291E), \*Machine Learning on 3D Data (CSE 291I), Neural Networks and Deep Learning (COGS 181), AI Algorithms and Social Languages (COGS 188), Engineering Probability and Statistics (ECE 109), Multivariable Calculus (MATH 20C), Differentiable Equations (MATH 20D), Discrete Math (CSE 20), Intro to Data Science (COGS 9)
+**Coursework**: \*Probabilistic Reasoning and Decision-Making (CSE 250A), \*Automated Reasoning in AI (CSE 291E), \*Machine Learning on 3D Data (CSE 291I), Neural Networks and Deep Learning (COGS 181), AI Algorithms and Social Languages (COGS 188), Probability (ECE 109), Multivariable Calculus (MATH 20C), Differentiable Equations (MATH 20D), Discrete Math (CSE 20), Data Science (COGS 9)
 
 \*Graduate-Level Courses
 
