@@ -26,6 +26,7 @@ papertitle {
 
 name {
   font-size: 32px;
+  line-height:130%;
 }
 
 note {
@@ -33,8 +34,8 @@ note {
   font-size: 13px;
 }
 
-.one {
+/* .one {
   width: 220px;
   height: 220px;
   position: relative;
-}
+} */
