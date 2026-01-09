@@ -34,6 +34,15 @@ note {
   font-size: 13px;
 }
 
+/* Consistent media width across all projects; height stays natural (keeps aspect ratio, no bars) */
+/* Same width across projects, preserve original aspect ratio (no cropping) */
+.paper-media {
+  display: block;
+  width: 107%;
+  max-width: 107%;
+  height: auto;
+}
+
 /* .one {
   width: 220px;
   height: 220px;
