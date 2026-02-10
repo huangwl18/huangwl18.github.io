@@ -124,6 +124,8 @@ a.award-highlight:focus {
 
 .news-date {
   position: relative;
+  display: inline-block;
+  width: 65px;
   flex-shrink: 0;
   font-size: 1em;
   font-weight: 700;
@@ -131,6 +133,7 @@ a.award-highlight:focus {
   line-height: 1.55;
   white-space: nowrap;
   padding-left: 10px;
+  font-variant-numeric: tabular-nums;
 }
 
 .news-date::before {
