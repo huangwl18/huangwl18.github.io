@@ -212,15 +212,16 @@ table.project-table td:first-of-type {
 }
 
 .cv-entry {
-  display: flex;
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  column-gap: 10px;
   align-items: flex-start;
-  gap: 10px;
   margin: 0;
   padding: 3px 0;
 }
 
 .cv-year {
-  min-width: 64px;
+  width: 92px;
   text-align: left;
   font-weight: 700;
   font-size: 1em;
@@ -232,11 +233,12 @@ table.project-table td:first-of-type {
 }
 
 .honors-list .cv-year {
-  min-width: 42px;
+  width: 56px;
 }
 
 .honors-list .cv-entry {
-  gap: 6px;
+  grid-template-columns: 56px 1fr;
+  column-gap: 6px;
 }
 
 .service-group {
@@ -316,11 +318,11 @@ table.project-table td:first-of-type {
   }
 
   .cv-entry {
-    flex-direction: column;
-    gap: 4px;
+    grid-template-columns: 1fr;
+    row-gap: 2px;
   }
 
   .cv-year {
-    min-width: 0;
+    width: auto;
   }
 }
