@@ -21,16 +21,30 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <a id="top"></a>
+  <table style="width:100%;max-width:1140px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
+        <table class="top-nav-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0 20px 10px 20px;width:100%;vertical-align:middle;text-align:right;">
+              <nav class="top-nav">
+                <a href="#top">Home</a>
+                <a href="#news">News</a>
+                <a href="#research">Research</a>
+                <a href="#honors">Honors</a>
+              </nav>
+            </td>
+          </tr>
+        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td class="intro-col" style="padding:2.5%;width:71%;vertical-align:middle">
               <p style="text-align:center">
                 <name>Wenlong Huang</name>
               </p>
-              <p>I am a Ph.D. candidate in Computer Science at Stanford, advised by <a href=https://profiles.stanford.edu/fei-fei-li>Fei-Fei Li</a> as part of the <a href=https://svl.stanford.edu>Stanford Vision and Learning Lab (SVL)</a>.
+              <p>I am a Ph.D. candidate in Computer Science at Stanford, working on AI and robotics.
+                I am advised by <a href=https://profiles.stanford.edu/fei-fei-li>Fei-Fei Li</a> as part of the <a href=https://svl.stanford.edu>Stanford Vision and Learning Lab (SVL)</a>.
                 I'm also working closely with <a href=https://people.csail.mit.edu/lpk>Leslie Kaelbling</a> and <a href=https://people.csail.mit.edu/tlp>Tomás Lozano-Pérez</a>.
               </p>
               <p>
@@ -58,6 +72,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:2px 20px 20px 20px;width:100%;vertical-align:middle">
+              <a id="news"></a>
               <heading>News</heading>
               <ul id="news-list" class="news-list collapsed">
                 <li>[Jan 2026] Released <a href="https://point-world.github.io/">PointWorld</a>, a large pre-trained 3D world model for robotic manipulation.</li>
@@ -88,20 +103,22 @@
         <table class="project-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
+              <a id="research"></a>
               <heading>Research</heading>
               <p class="research-intro">
-                My research focuses on <strong>robotic manipulation</strong> and <strong>embodied intelligence</strong>, with the aim of developing algorithms that offer <b>structural generalization</b> (e.g., across tasks&nbsp;<sub class="work-ref"><a href="https://rekep-robot.github.io/" aria-label="ReKep project page">1</a>,<a href="https://voxposer.github.io/" aria-label="VoxPoser project page">2</a>,<a href="/language-planner/" aria-label="Language Models as Zero-Shot Planners project page">3</a>,<a href="https://code-as-policies.github.io/" aria-label="Code as Policies project page">4</a></sub>, environments&nbsp;<sub class="work-ref"><a href="https://point-world.github.io/" aria-label="PointWorld project page">1</a>,<a href="https://dream2flow.github.io/" aria-label="Dream2Flow project page">2</a>,<a href="https://unsup-affordance.github.io/" aria-label="UAD project page">3</a>,<a href="/geometry-dex/" aria-label="Geometry-Dex project page">4</a></sub>, and embodiments&nbsp;<sub class="work-ref"><a href="https://point-world.github.io/" aria-label="PointWorld project page">1</a>,<a href="https://dream2flow.github.io/" aria-label="Dream2Flow project page">2</a>,<a href="/modular-rl/" aria-label="Modular-RL project page">3</a></sub>). Towards this goal, I am currently interested in:
+                My research focuses on <strong>robot learning</strong>, with the aim of developing algorithms with <b>scalable data sources</b> that offer <b>structural generalization</b> (e.g., across tasks&nbsp;<sub class="work-ref"><a href="https://rekep-robot.github.io/" aria-label="ReKep project page">1</a>,<a href="https://voxposer.github.io/" aria-label="VoxPoser project page">2</a>,<a href="/language-planner/" aria-label="Language Models as Zero-Shot Planners project page">3</a>,<a href="https://code-as-policies.github.io/" aria-label="Code as Policies project page">4</a></sub>, environments&nbsp;<sub class="work-ref"><a href="https://point-world.github.io/" aria-label="PointWorld project page">1</a>,<a href="https://dream2flow.github.io/" aria-label="Dream2Flow project page">2</a>,<a href="https://unsup-affordance.github.io/" aria-label="UAD project page">3</a>,<a href="/geometry-dex/" aria-label="Geometry-Dex project page">4</a></sub>, and embodiments&nbsp;<sub class="work-ref"><a href="https://point-world.github.io/" aria-label="PointWorld project page">1</a>,<a href="https://dream2flow.github.io/" aria-label="Dream2Flow project page">2</a>,<a href="/modular-rl/" aria-label="Modular-RL project page">3</a></sub>). Towards this goal, I am currently interested in:
               </p>
               <ul class="research-areas">
+                <li><span class="research-area-title">Spatial Intelligence</span>: Modeling the physical, interactive, and spatial world —and the behaviors within it— for robotic manipulation.</li>
                 <li><span class="research-area-title">Foundation Models for Robotics</span>: Developing structured representations that leverage foundation models and Internet-scale data.</li>
-                <li><span class="research-area-title">Spatial Intelligence</span>: Modeling the physical, interactive, and spatial world with scalable data sources for robotic manipulation.</li>
               </ul>
             </td>
           </tr>
         </tbody></table>
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <a id="publications"></a>
+        <table class="projects-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr>
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="https://point-world.github.io/"><video class="paper-media" preload="auto" playsinline="" muted="" loop="" autoplay="">
@@ -140,12 +157,32 @@
           Karthik Dharmarajan, <u>Wenlong Huang</u>*, Jiajun Wu, Li Fei-Fei†, Ruohan Zhang†
           <note>(*Corresponding Author, †Equal Advising)</note>
           <br>
-          <em>arXiv</em>, 2025
+          <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
           <br>
           <a href="https://dream2flow.github.io/">Project Page</a> /
           <a href="https://arxiv.org/abs/2512.24766">Paper</a>
           
           <p class="project-description">3D object flows from text-to-video models provide zero-shot guidance for open-world manipulation as tracking goals for downstream (model-based and model-free) policies.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+          <a href="./"><img class="paper-media" src='images/stack.png'></a>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+          <a href="./">
+            <papertitle>Learning Composable Skills by Discovering<br>Spatial and Temporal Structure with Foundation Models</papertitle>
+          </a>
+          <br>
+          Neil Nie, <u>Wenlong Huang</u>, Jiayuan Mao, Li Fei-Fei, Weiyu Liu, Jiajun Wu
+          <br>
+          <em>International Conference on Robotics and Automation (ICRA)</em>, 2026
+          <br>
+          <a href="./">Project Page</a> /
+          <a href="./">Paper</a>
+          
+          <p class="project-description">Extract skill segments and 3D entities from unstructured demonstrations to learn composable skills that generalize to longer-horizon test settings and novel geometric constraints.</p>
       </td>
     </tr>
 
@@ -163,7 +200,7 @@
           Qineng Wang*, <u>Wenlong Huang</u>*, Yu Zhou, Hang Yin, Tianwei Bao, Jianwen Lyu, Weiyu Liu, Ruohan Zhang†, Jiajun Wu†, Li Fei-Fei†, Manling Li†
           <note>(*Equal Contribution, †Equal Advising)</note>
           <br>
-          <em>arXiv</em>, 2025
+          <em>International Conference on Learning Representations (ICLR)</em>, 2026
           <br>
           <a href="https://enact-embodied-cognition.github.io/">Project Page</a> /
           <a href="https://arxiv.org/abs/2511.20937">Paper</a> /
@@ -473,9 +510,81 @@
           <br>
           <a href="https://pages.ucsd.edu/~ztu/publication/aaai19_3dwinn.pdf">Paper</a>
           
-          <p class="project-description">Built upon <a href="https://pages.ucsd.edu/~ztu/publication/cvpr07_gdl.pdf">Generative via Discriminative Learning</a> and <a href="http://pages.ucsd.edu/%7Eztu/publication/iccv17_inng.pdf">Introspective</a> <a href="https://arxiv.org/pdf/1704.07816.pdf">Learning</a> <a href=http://pages.ucsd.edu/%7Eztu/publication/cvpr18_winn.pdf>frameworks</a>, a single neural network can simultaneously perform classification and generation of 3D volumetric shapes.</p>
+	          <p class="project-description">Built upon <a href="https://pages.ucsd.edu/~ztu/publication/cvpr07_gdl.pdf">Generative via Discriminative Learning</a> and <a href="http://pages.ucsd.edu/%7Eztu/publication/iccv17_inng.pdf">Introspective</a> <a href="https://arxiv.org/pdf/1704.07816.pdf">Learning</a> <a href=http://pages.ucsd.edu/%7Eztu/publication/cvpr18_winn.pdf>frameworks</a>, a single neural network can simultaneously perform classification and generation of 3D volumetric shapes.</p>
       </td>
     </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:24px 20px 20px 20px;width:100%;vertical-align:middle">
+              <a id="honors"></a>
+              <heading>Selected Honors</heading>
+              <div class="cv-list honors-list">
+                <div class="cv-entry"><span class="cv-year">2025</span><span>Best Paper Award Finalist at ICRA 2025</span></div>
+                <div class="cv-entry"><span class="cv-year">2025</span><span>Best Paper Award on Robot Perception Finalist at ICRA 2025</span></div>
+                <div class="cv-entry"><span class="cv-year">2025</span><span>Finalist for NVIDIA Graduate Fellowship</span></div>
+                <div class="cv-entry"><span class="cv-year">2025</span><span>Finalist for Citadel GQS Fellowship (three in CS/EE)</span></div>
+                <div class="cv-entry"><span class="cv-year">2024</span><span>Best Paper Award at LEAP Workshop at CoRL 2024</span></div>
+                <div class="cv-entry"><span class="cv-year">2023</span><span>Outstanding Robot Learning Paper Winner at ICRA 2023</span></div>
+                <div class="cv-entry"><span class="cv-year">2022</span><span>Stanford School of Engineering Fellowship</span></div>
+              </div>
+            </td>
+          </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:2px 20px 20px 20px;width:100%;vertical-align:middle">
+              <heading>Professional Service</heading>
+              <div class="service-group">
+                <p><strong>Workshop / Tutorial Organization</strong></p>
+                <ul class="service-list">
+                  <li><a href="https://swomo-rss.github.io/">Workshop on Structured World Models for Robotic Manipulation</a> at RSS 2025</li>
+                  <li><a href="https://foundation-models-meet-embodied-agents.github.io/cvpr2025/">Workshop on Foundation Models for Embodied Agents</a> at NeurIPS 2025 and CVPR 2025</li>
+                  <li><a href="https://foundation-models-meet-embodied-agents.github.io/">Tutorial on Foundation Models Meet Embodied Agents</a> at ICCV 2025, NAACL 2025, and AAAI 2025</li>
+                  <li><a href="https://llmforplanning.github.io/">Workshop on Planning in the Era of LLMs</a> at AAAI 2025</li>
+                </ul>
+              </div>
+              <div class="service-group">
+                <p><strong>Conference Reviewer</strong>: ICML, NeurIPS, ICLR, ECCV, CVPR, ICRA, CoRL, IROS, and RSS</p>
+              </div>
+              <div class="service-group">
+                <p><strong>Journal Reviewer</strong>: Science Robotics, IJRR, T-RO, RA-L, and Nature Communications</p>
+              </div>
+              <div class="service-group">
+                <p><strong>Seminar Organization</strong>: Stanford Vision Seminar</p>
+              </div>
+            </td>
+          </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:2px 20px 20px 20px;width:100%;vertical-align:middle">
+              <heading>Teaching</heading>
+              <div class="cv-list">
+                <div class="cv-entry"><span class="cv-year">Winter 2026</span><span>Guest Lecturer: <a href="https://courses.cs.washington.edu/courses/cse571/26wi/"><strong>CSE 571: AI-Robotics</strong></a> at University of Washington</span></div>
+                <div class="cv-entry"><span class="cv-year">Spring 2025</span><span>Teaching Assistant: <a href="https://cs231n.stanford.edu/"><strong>CS231n: Deep Learning for Computer Vision</strong></a> at Stanford University</span></div>
+                <div class="cv-entry"><span class="cv-year">Spring 2024</span><span>Teaching Assistant: <a href="https://cs231n.stanford.edu/"><strong>CS231n: Deep Learning for Computer Vision</strong></a> at Stanford University</span></div>
+              </div>
+            </td>
+          </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:2px 20px 20px 20px;width:100%;vertical-align:middle">
+              <heading>Mentoring</heading>
+              <div class="mentoring-list">
+                <p><a href="https://kdharmarajan.com/">Karthik Dharmarajan</a>: Stanford, M.S. in CS</p>
+                <p><a href="https://www.wykac.com/">Yingke Wang</a>: Stanford, M.S. in CS</p>
+                <p><a href="https://www.linkedin.com/in/neilnie/">Neil Nie</a>: Stanford, M.S. in CS → UC Berkeley, Ph.D. student (on leave) → Verne Robotics, Cofounder</p>
+                <p><a href="https://tangyihe.com/">Yihe Tang</a>: Stanford, M.S. in CS → USC, Ph.D. student</p>
+              </div>
+            </td>
+          </tr>
+    </tbody></table>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
@@ -496,6 +605,20 @@
       if (!newsList || !toggleButton) {
         return;
       }
+      var newsItems = newsList.querySelectorAll('li');
+      newsItems.forEach(function (item) {
+        if (item.querySelector('.news-date')) {
+          return;
+        }
+        var html = item.innerHTML.trim();
+        var match = html.match(/^\[([^\]]+)\]\s*(.*)$/s);
+        if (!match) {
+          return;
+        }
+        var dateLabel = match[1];
+        var body = match[2];
+        item.innerHTML = '<span class="news-date">' + dateLabel + '</span><span class="news-item-body">' + body + '</span>';
+      });
       toggleButton.addEventListener('click', function () {
         var isCollapsed = newsList.classList.toggle('collapsed');
         toggleButton.textContent = isCollapsed ? '[show more]' : '[show less]';

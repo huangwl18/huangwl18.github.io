@@ -1,6 +1,7 @@
 :root {
   --project-description-spacing: 6px;
   --award-highlight-color: #E43F37;
+  --cv-divider: #e7edf5;
 }
 
 body {
@@ -21,7 +22,11 @@ a:hover {
 }
 
 heading {
+  display: block;
   font-size: 22px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--cv-divider);
 }
 
 papertitle {
@@ -37,6 +42,35 @@ name {
 note {
   color: #080808a6;
   font-size: 13px;
+}
+
+.top-nav {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0;
+  font-size: inherit;
+}
+
+.top-nav a {
+  color: #000000;
+  font-weight: 400;
+  padding: 4px 12px;
+  border: 0;
+  background: transparent;
+  transition: transform 0.22s ease, background 0.22s ease, box-shadow 0.22s ease, color 0.22s ease;
+  position: relative;
+  z-index: 0;
+}
+
+.top-nav a + a {
+  border-left: 1px solid #d4e0ec;
+}
+
+.top-nav a:hover {
+  color: #000000;
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+  box-shadow: 0 8px 18px rgba(48, 91, 129, 0.14), 0 2px 6px rgba(197, 139, 92, 0.1);
 }
 
 /* Consistent media width across all projects; height stays natural (keeps aspect ratio, no bars) */
@@ -77,6 +111,42 @@ a.award-highlight:focus {
 
 .news-list {
   margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 1px 0;
+}
+
+.news-date {
+  position: relative;
+  flex-shrink: 0;
+  font-size: 1em;
+  font-weight: 700;
+  color: #4f5a66;
+  line-height: 1.55;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.news-date::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: #8e98a3;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.news-item-body {
+  flex: 1;
 }
 
 .research-areas {
@@ -105,6 +175,96 @@ a.award-highlight:focus {
 
 table.project-table td:first-of-type {
   vertical-align: top !important;
+}
+
+.projects-list {
+  border-spacing: 0 2px !important;
+}
+
+.projects-list tbody tr {
+  transition: transform 0.22s ease;
+}
+
+.projects-list tbody tr td {
+  background: transparent;
+  transition: background 0.22s ease, box-shadow 0.22s ease;
+}
+
+.projects-list tbody tr td:first-child {
+  border-radius: 14px 0 0 14px;
+}
+
+.projects-list tbody tr td:last-child {
+  border-radius: 0 14px 14px 0;
+}
+
+.projects-list tbody tr:hover {
+  transform: translateY(-2px);
+}
+
+.projects-list tbody tr:hover td {
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
+  box-shadow: 0 10px 24px rgba(48, 91, 129, 0.16), 0 2px 8px rgba(197, 139, 92, 0.12);
+}
+
+.cv-list {
+  margin-top: 8px;
+}
+
+.cv-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 3px 0;
+}
+
+.cv-year {
+  min-width: 64px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.55;
+  color: #2d4e6b;
+  padding: 0 2px 0 6px;
+  border-left: 3px solid #9fb9d3;
+  white-space: nowrap;
+}
+
+.honors-list .cv-year {
+  min-width: 42px;
+}
+
+.honors-list .cv-entry {
+  gap: 6px;
+}
+
+.service-group {
+  margin-top: 4px;
+  padding-top: 4px;
+}
+
+.service-group:first-of-type {
+  margin-top: 4px;
+  padding-top: 4px;
+}
+
+.service-group p {
+  margin: 0;
+}
+
+.service-list {
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+}
+
+.service-list li {
+  margin: 2px 0;
+}
+
+.mentoring-list p {
+  margin: 0;
+  padding: 2px 0;
 }
 
 /* .one {
@@ -145,5 +305,22 @@ table.project-table td:first-of-type {
 
   .twitter-follow-container {
     display: none;
+  }
+
+  .top-nav-table td {
+    padding: 0 12px 8px 12px !important;
+  }
+
+  .top-nav {
+    font-size: 14px;
+  }
+
+  .cv-entry {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .cv-year {
+    min-width: 0;
   }
 }
