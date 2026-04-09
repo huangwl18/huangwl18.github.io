@@ -94,6 +94,122 @@ sub.work-ref {
   margin-bottom: 6px;
 }
 
+.research-videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 26px;
+  max-width: 960px;
+  margin: 10px auto 18px;
+}
+
+.research-video-card {
+  flex: 0 1 410px;
+  max-width: 410px;
+}
+
+.research-video-title {
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.research-video-date {
+  font-weight: 400;
+}
+
+.research-video-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.research-video-fallback {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  color: inherit;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(28, 40, 54, 0.16);
+  isolation: isolate;
+}
+
+.research-video-fallback img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.research-video-fallback:hover .research-video-play {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.research-video-fallback::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.04) 0%, rgba(10, 10, 10, 0.2) 100%);
+  pointer-events: none;
+}
+
+.research-video-youtube {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 9px 4px 8px;
+  border-radius: 999px;
+  background: rgba(204, 0, 0, 0.92);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  z-index: 1;
+}
+
+.research-video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.78);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  transform: translate(-50%, -50%);
+  transition: transform 0.18s ease;
+  z-index: 1;
+}
+
+.research-video-play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-bottom: 13px solid transparent;
+  border-left: 21px solid #fff;
+}
+
+.research-video-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(17, 17, 17, 0.72);
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  z-index: 1;
+}
+
 .research-area-title {
   font-weight: 700;
 }
@@ -256,6 +372,13 @@ table.project-table td:first-of-type {
 
 .service-group p {
   margin: 0;
+}
+
+@media (max-width: 760px) {
+  .research-video-card {
+    flex-basis: 100%;
+    max-width: 560px;
+  }
 }
 
 .service-list {
