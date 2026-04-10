@@ -39,6 +39,33 @@ name {
   line-height:130%;
 }
 
+.mobile-photo-wrap {
+  display: none;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 8px;
+}
+
+.profile-links a,
+.profile-links .link-separator {
+  white-space: nowrap;
+}
+
+.profile-link-detail {
+  color: #4f5a66;
+  white-space: normal;
+}
+
+.link-separator {
+  color: #8b97a3;
+  user-select: none;
+}
+
 note {
   color: #080808a6;
   font-size: 13px;
@@ -454,9 +481,41 @@ table.project-table td:first-of-type {
 }
 
 @media (max-width: 760px) {
+  .research-videos {
+    gap: 16px;
+    margin: 8px auto 16px;
+  }
+
   .research-video-card {
     flex-basis: 100%;
-    max-width: 560px;
+    max-width: 100%;
+  }
+
+  .research-video-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .research-video-youtube {
+    top: 8px;
+    left: 8px;
+    padding: 3px 7px;
+    font-size: 10px;
+  }
+
+  .research-video-play {
+    width: 56px;
+    height: 56px;
+  }
+
+  .research-video-play::before {
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 16px;
+  }
+
+  .research-video-hint {
+    display: none;
   }
 }
 
@@ -544,10 +603,10 @@ table.project-table td:first-of-type {
 
 @media (max-width: 700px) {
   body {
-    margin-top: 24px;
-    margin-bottom: 40px;
-    font-size: 14.8px;
-    line-height: 150%;
+    margin-top: 18px;
+    margin-bottom: 32px;
+    font-size: 15px;
+    line-height: 155%;
   }
 
   heading {
@@ -558,16 +617,58 @@ table.project-table td:first-of-type {
     font-size: 28px;
   }
 
+  .hero-table,
+  .hero-table tbody,
+  .hero-row {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-row > td {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .intro-col,
+  .photo-col {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 14px 16px 14px !important;
+  }
+
   .intro-col {
-    width: 78% !important;
+    padding-top: 4px !important;
   }
 
   .photo-col {
-    width: 22% !important;
+    display: none !important;
   }
 
-  .photo-col img {
-    max-width: 180px !important;
+  .profile-photo {
+    width: min(58vw, 220px) !important;
+    max-width: 220px !important;
+  }
+
+  .mobile-photo-wrap {
+    display: block;
+    margin: 2px 0 14px 0;
+    text-align: left;
+  }
+
+  .profile-photo-mobile {
+    display: block;
+    margin: 0;
+  }
+
+  .profile-name {
+    text-align: left !important;
+    margin-bottom: 10px;
+  }
+
+  .profile-links {
+    justify-content: flex-start;
+    gap: 6px 10px;
+    text-align: left !important;
   }
 
   .twitter-follow-container {
@@ -582,13 +683,71 @@ table.project-table td:first-of-type {
     font-size: 14px;
   }
 
+  .project-heading-row {
+    gap: 8px;
+  }
+
+  .projects-filter-nav {
+    font-size: 14px;
+  }
+
+  .projects-list,
+  .projects-list tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .projects-list tbody > tr {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .projects-list tbody > tr > td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .projects-list tbody > tr > td:first-child {
+    padding: 14px 14px 8px 14px !important;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .projects-list tbody > tr > td:last-child {
+    padding: 0 14px 14px 14px !important;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .paper-media {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  .projects-list tbody tr:hover {
+    transform: none;
+  }
+
+  .projects-list tbody tr:hover td {
+    box-shadow: none;
+  }
+
   .cv-entry {
-    grid-template-columns: 1fr;
-    row-gap: 2px;
+    grid-template-columns: 102px 1fr;
+    column-gap: 8px;
+    row-gap: 0;
   }
 
   .cv-year {
-    width: auto;
+    width: 102px;
+  }
+
+  .honors-list .cv-entry {
+    grid-template-columns: 56px 1fr;
+  }
+
+  .honors-list .cv-year {
+    width: 56px;
   }
 
   .experience-entry {
@@ -598,5 +757,20 @@ table.project-table td:first-of-type {
 
   .experience-logo-wrap {
     width: min(220px, 100%);
+  }
+}
+
+@media (max-width: 560px) {
+  .research-videos {
+    gap: 14px;
+  }
+
+  .news-date {
+    width: 62px;
+    padding-left: 8px;
+  }
+
+  .news-item-body {
+    padding-left: 0;
   }
 }
