@@ -428,8 +428,8 @@ table.project-table td:first-of-type {
 }
 
 .projects-list tbody tr:hover td {
-  background: linear-gradient(180deg, #ffffff 0%, #f3f8ff 100%);
-  box-shadow: 0 10px 24px rgba(48, 91, 129, 0.16), 0 2px 8px rgba(197, 139, 92, 0.12);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(20, 24, 28, 0.12), 0 2px 8px rgba(20, 24, 28, 0.06);
 }
 
 .cv-list {
