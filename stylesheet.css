@@ -514,7 +514,10 @@ table.project-table td:first-of-type {
   }
 
   .research-video-hint {
-    display: none;
+    right: 8px;
+    bottom: 8px;
+    padding: 2px 7px;
+    font-size: 10px;
   }
 }
 
