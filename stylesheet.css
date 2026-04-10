@@ -149,7 +149,6 @@ sub.work-ref {
 .research-video-frame {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
   border: 0;
 }
 
@@ -161,13 +160,13 @@ sub.work-ref {
   border-radius: 12px;
   box-shadow: 0 10px 24px rgba(28, 40, 54, 0.16);
   isolation: isolate;
+  line-height: 0;
 }
 
 .research-video-fallback img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 
 .research-video-fallback:hover .research-video-play {
