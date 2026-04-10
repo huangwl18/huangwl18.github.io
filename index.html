@@ -118,16 +118,16 @@
                 <li>[May 2025] <a href="https://unsup-affordance.github.io/">UAD</a> is nominated as a <a class="award-highlight" href="https://2025.ieee-icra.org/program/awards-and-finalists/">Best Paper Finalist</a> and a <a class="award-highlight" href="https://2025.ieee-icra.org/program/awards-and-finalists/">Best Paper Award on Robot Perception Finalist</a> at ICRA 2025.</li>
                 <li>[Apr 2025] Grateful to be selected as a finalist for the <a href="https://www.citadel.com/careers/programs-and-events/gqs-phd-fellowship/">Citadel GQS Fellowship</a> (three in CS/EE).</li>
                 <li>[Feb 2025] Co-organizing <a href="https://foundation-models-meet-embodied-agents.github.io/">Tutorial on Foundation Models Meet Embodied Agents</a> at ICCV 2025, NAACL 2025, and AAAI 2025.</li>
-                <li>[Feb 2025] Invited Talk at <a href="https://github.com/amazon-far">Amazon FAR</a>, <a href="https://i.cs.hku.hk/~hszhao/lab.html">HKU</a> on "Foundation Models for Spatial Task Representation in Robotics".</li>
+                <li>[Feb 2025] Invited Talk at <a href="https://github.com/amazon-far">Amazon FAR</a>, <a href="https://i.cs.hku.hk/~hszhao/lab.html">HKU</a> on "Generalization through Task Representations with Foundation Models".</li>
                 <li>[Dec 2024] Grateful to be selected as a finalist for the <a href="https://blogs.nvidia.com/blog/graduate-fellowship-recipients-2025-2026/">NVIDIA Graduate Fellowship</a>.</li>
                 <li>[Dec 2024] Co-organizing <a href="https://foundation-models-meet-embodied-agents.github.io/cvpr2025/">Workshop on Foundation Models for Embodied Agents (FMEA)</a> at CVPR 2025.</li>
                 <li>[Dec 2024] Co-organizing <a href="https://llmforplanning.github.io/">Workshop on Planning in the Era of LLMs (LM4Plan)</a> at AAAI 2025.</li>
                 <li>[Nov 2024] <a href="https://rekep-robot.github.io/">ReKep</a> was presented at CoRL 2024 and won the <a class="award-highlight" href="https://leap-workshop.github.io/">Best Paper Award</a> at the 2024 CoRL LEAP Workshop.</li>
                 <li>[Oct 2023] Invited Talks at <a href="https://iprl.stanford.edu/">Stanford IPRL</a>, <a href="https://people.iiis.tsinghua.edu.cn/~gaoyang/yang-gao.weebly.com/group.html">Tsinghua</a>, <a href="https://www.tri.global/">TRI</a> on "Foundation Models for Open-World Generalization in Robotics".</li>
-                <li>[Aug 2023] <a href="https://voxposer.github.io/">VoxPoser</a> is accepted at CoRL 2023 for an <span class="award-highlight">Oral Presentation</span>.</li>
+                <li>[Aug 2023] <a href="https://voxposer.github.io/">VoxPoser</a> is accepted at CoRL 2023 for an <a class="award-highlight" href="https://www.corl2023.org/papers">Oral Presentation</a>.</li>
                 <li>[Jun 2023] <a href=https://code-as-policies.github.io>Code as Policies</a> received <a class="award-highlight" href="https://web.archive.org/web/20250425160717/https://www.icra2023.org/awards-finalists">Outstanding Robot Learning Paper Award</a> at ICRA 2023.</li>
                 <li class="news-item--extra">[Nov 2022] <a href=https://code-as-policies.github.io>Code as Policies</a> is covered by <a href=https://ai.googleblog.com/2022/11/robots-that-write-their-own-code.html>Google AI Blog</a> and <a href=https://techcrunch.com/2022/11/02/google-wants-robots-to-generate-their-own-code>TechCrunch</a>.</li>
-                <li class="news-item--extra">[Oct 2022] Invited Talks at <a href="https://cair.cs.columbia.edu/index.html">Columbia CAIR</a>, <a href="https://research.google/">Google</a> on "Language as Generalization Interface for Robotics".</li>
+                <li class="news-item--extra">[Oct 2022] Invited Talks at <a href="https://cair.cs.columbia.edu/index.html">Columbia</a>, <a href="https://research.google/">Google</a> on "Language as Generalization Interface for Robotics".</li>
                 <li class="news-item--extra">[Oct 2022] <a href=https://innermonologue.github.io>Inner Monologue</a> is covered by <a href=https://www.youtube.com/watch?v=Ybk8hxKeMYQ>Two Minute Papers</a>.</li>
                 <li class="news-item--extra">[Sep 2022] Started at Stanford as a PhD student, generously supported by Stanford SoE Fellowship.</li>
                 <li class="news-item--extra">[Feb 2022] Invited Talks at <a href="https://research.google/">Google</a>, <a href="https://ai.meta.com/research/">FAIR</a>, <a href="https://sail.sea.com/">Sea AI Lab</a>, <a href="https://www.bytedance.com/en/">ByteDance AI Lab</a> on our <a href="/language-planner/">LLMs as Zero-Shot Planners</a> project.</li>
@@ -141,12 +141,19 @@
             <tr>
             <td style="padding:20px 20px 6px 20px;width:100%;vertical-align:middle">
               <a id="publications"></a>
-              <heading>Research</heading>
+              <div class="project-heading-row">
+                <heading>Research</heading>
+                <div class="projects-filter-nav" role="group" aria-label="Research filter">
+                  <button type="button" id="projects-filter-selected" class="projects-filter-option" aria-pressed="false">show selected</button>
+                  <span class="projects-filter-separator" aria-hidden="true">/</span>
+                  <button type="button" id="projects-filter-all" class="projects-filter-option is-active" aria-pressed="true">show all</button>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody></table>
         <table class="projects-list" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="https://point-world.github.io/"><video class="paper-media js-lazy-video" preload="none" playsinline="" muted="" loop="">
       <source data-src="images/optimized/pointworld.mp4" type="video/mp4" />
@@ -247,7 +254,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="https://rekep-robot.github.io/"><video class="paper-media js-lazy-video" id="v0" preload="none" playsinline="" muted="" loop="">
       <source data-src="images/optimized/rekep.mp4" type="video/mp4" />
@@ -330,7 +337,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="https://voxposer.github.io/"><video class="paper-media js-lazy-video" id="v0" preload="none" playsinline="" muted="" loop="">
       <source data-src="images/optimized/voxposer.mp4" type="video/mp4" />
@@ -404,7 +411,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="https://code-as-policies.github.io/"><video class="paper-media js-lazy-video" id="v0" preload="none" playsinline="" muted="" loop="">
       <source data-src="images/optimized/code-as-policies.mp4" type="video/mp4" />
@@ -429,7 +436,7 @@
           <a href="https://techcrunch.com/2022/11/02/google-wants-robots-to-generate-their-own-code/">TechCrunch</a> /
           <a href="https://x.com/jackyliang42/status/1587798590386233344">Summary</a>
           
-          <p class="project-description">Using hierarchical code generation, language models can write robot policy code that exhibits spatial-geometric reasoning given abstract natural language instructions.</p>
+          <p class="project-description">Using hierarchical code generation, language models can write hierarchical robot policy code given abstract natural language instructions.</p>
       </td>
     </tr>
 
@@ -455,11 +462,11 @@
           <a href="https://www.youtube.com/watch?v=Ybk8hxKeMYQ">Two Minute Papers</a> /
           <a href="https://x.com/wenlong_huang/status/1547344852269969409">Summary</a>
           
-          <p class="project-description">Provided with textual embodied feedback, language models can articulate a grounded "thought process", solving challenging long-horizon robotic tasks, even under disturbances.</p>
+          <p class="project-description">Provided with textual embodied feedback, language models can articulate a grounded "thought process" for challenging long-horizon tasks, even under disturbances.</p>
       </td>
     </tr>
 
-    <tr>  
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="/language-planner/"><img class="paper-media" src='images/gpt-virtualhome.gif'></a>
       </td>
@@ -479,7 +486,7 @@
           <a href="https://www.youtube.com/watch?v=CkyugWI3_fc">Video</a> /
           <a href="https://x.com/pathak2206/status/1483835288065658882">Summary</a>
           
-          <p class="project-description">Large language models (e.g. GPT-3, Codex) contain rich actionable knowledge that can be used to plan actions for embodied agents, even without additional training.</p>
+          <p class="project-description">Large language models (e.g. GPT-3, Codex) contain rich actionable knowledge that can be used to perform task planning for embodied agents, even without additional training.</p>
       </td>
     </tr>
 
@@ -505,7 +512,7 @@
       </td>
     </tr>
 
-    <tr>
+    <tr class="project-row--representative">
       <td style="padding:20px;width:30%;vertical-align:middle">
           <a href="/modular-rl/"><img class="paper-media" src='images/modularRL.gif'></a>
       </td>
@@ -517,6 +524,8 @@
           <u>Wenlong Huang</u>, Igor Mordatch, Deepak Pathak
           <br>
     <em>International Conference on Machine Learning (ICML)</em>, 2020.
+          <br>
+          <b><span class="award-highlight">Oral Presentation</span></b>
           <br>
           <a href="/modular-rl/">Project Page</a> /
           <a href="https://www.cs.cmu.edu/~dpathak/papers/modular-rl.pdf">Paper</a> /
@@ -803,9 +812,73 @@
       });
     }
 
+    function initProjectsFilter() {
+      var projectsList = document.querySelector('.projects-list');
+      var selectedButton = document.getElementById('projects-filter-selected');
+      var allButton = document.getElementById('projects-filter-all');
+      if (!projectsList || !selectedButton || !allButton) {
+        return;
+      }
+
+      var projectRows = Array.prototype.slice.call(projectsList.querySelectorAll('tbody > tr'));
+
+      function rowIsNearViewport(row) {
+        var rect = row.getBoundingClientRect();
+        var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+        return rect.bottom > -280 && rect.top < viewportHeight + 280;
+      }
+
+      function syncProjectVideos() {
+        projectRows.forEach(function (row) {
+          var isVisible = !projectsList.classList.contains('representative-only') || row.classList.contains('project-row--representative');
+          var videos = row.querySelectorAll('video.js-lazy-video');
+          videos.forEach(function (video) {
+            if (!isVisible) {
+              video.pause();
+              return;
+            }
+            if (video.dataset.loaded === '1' && rowIsNearViewport(row)) {
+              var promise = video.play();
+              if (promise && typeof promise.catch === 'function') {
+                promise.catch(function () {});
+              }
+              return;
+            }
+            video.pause();
+          });
+        });
+      }
+
+      function setRepresentativeOnly(representativeOnly) {
+        projectsList.classList.toggle('representative-only', representativeOnly);
+        selectedButton.classList.toggle('is-active', representativeOnly);
+        selectedButton.setAttribute('aria-pressed', representativeOnly ? 'true' : 'false');
+        allButton.classList.toggle('is-active', !representativeOnly);
+        allButton.setAttribute('aria-pressed', representativeOnly ? 'false' : 'true');
+        syncProjectVideos();
+      }
+
+      selectedButton.addEventListener('click', function () {
+        if (selectedButton.classList.contains('is-active')) {
+          return;
+        }
+        setRepresentativeOnly(true);
+      });
+
+      allButton.addEventListener('click', function () {
+        if (allButton.classList.contains('is-active')) {
+          return;
+        }
+        setRepresentativeOnly(false);
+      });
+
+      setRepresentativeOnly(false);
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
       initNewsFormatting();
       initLazyProjectVideos();
+      initProjectsFilter();
     });
   </script>
 </body>
