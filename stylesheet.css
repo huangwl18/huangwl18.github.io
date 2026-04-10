@@ -422,6 +422,16 @@ table.project-table td:first-of-type {
   border-radius: 0 14px 14px 0;
 }
 
+@media (min-width: 701px) {
+  .projects-list tbody > tr > td:first-child {
+    width: 26% !important;
+  }
+
+  .projects-list tbody > tr > td:last-child {
+    width: 74% !important;
+  }
+}
+
 .projects-list tbody tr:hover {
   transform: translateY(-2px);
 }
