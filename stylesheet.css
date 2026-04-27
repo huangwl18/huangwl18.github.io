@@ -48,12 +48,7 @@ name {
 .profile-name,
 .intro-col > p,
 .mobile-photo-wrap,
-.photo-col,
-.research-video-card,
-.research-intro,
-.research-areas,
-.news-list,
-.news-toggle {
+.photo-col {
   animation: subtleFloatIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   animation-delay: var(--float-delay, 0ms);
   will-change: transform, opacity;
@@ -77,24 +72,6 @@ name {
   --float-delay: 220ms;
 }
 
-.research-video-card:first-child {
-  --float-delay: 280ms;
-}
-
-.research-video-card:nth-child(2) {
-  --float-delay: 340ms;
-}
-
-.research-intro {
-  --float-delay: 400ms;
-}
-
-.research-areas,
-.news-list,
-.news-toggle {
-  --float-delay: 460ms;
-}
-
 @keyframes subtleFloatIn {
   from {
     opacity: 0;
@@ -105,6 +82,19 @@ name {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
   }
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0) scale(0.992);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--scroll-reveal-delay, 0ms);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .profile-links {
@@ -648,36 +638,10 @@ table.project-table td:first-of-type {
   align-items: start;
   padding: 14px 0;
   border-bottom: 1px solid var(--cv-divider);
-  animation: subtleFloatIn 0.58s cubic-bezier(0.22, 1, 0.36, 1) both;
-  animation-delay: var(--experience-delay, 0ms);
 }
 
 .experience-entry:first-child {
   padding-top: 4px;
-}
-
-.experience-entry:nth-child(1) {
-  --experience-delay: 40ms;
-}
-
-.experience-entry:nth-child(2) {
-  --experience-delay: 90ms;
-}
-
-.experience-entry:nth-child(3) {
-  --experience-delay: 140ms;
-}
-
-.experience-entry:nth-child(4) {
-  --experience-delay: 190ms;
-}
-
-.experience-entry:nth-child(5) {
-  --experience-delay: 240ms;
-}
-
-.experience-entry:nth-child(6) {
-  --experience-delay: 290ms;
 }
 
 .experience-entry:hover .experience-org a {
@@ -747,6 +711,12 @@ table.project-table td:first-of-type {
     animation: none;
     opacity: 1;
     transform: none;
+  }
+
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .profile-photo,
