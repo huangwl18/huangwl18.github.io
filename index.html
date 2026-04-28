@@ -118,6 +118,7 @@
               <ul id="news-list" class="news-list collapsed">
                 <li>[Jun 2026] Invited Talk at <a href="https://mars-eai.github.io/CVPR-SCI-MARS-Webpage/">CVPR 2026 Workshop on Multi-Agent Robotic Systems:
                   Scaling with Compositional Intelligence</a>.</li>
+                <li>[Apr 2026] <a href="https://enact-embodied-cognition.github.io/">ENACT</a> received <span class="award-highlight">Outstanding Paper Awards</span> at the ICLR 2026 Workshop on World Models and the ICLR 2026 Workshop on Lifelong Agents.</li>
                 <li>[Apr 2026] <a href="https://point-world.github.io/">PointWorld</a> is accepted at CVPR 2026 as a <span class="award-highlight">Highlight</span>.</li>
                 <li>[Mar 2026] Invited Talk at <a href="https://allenai.org/">Ai2</a>, <a href="https://rpl.cs.utexas.edu/">UT Austin</a>, <a href="https://lumina-embodied.ai/talks">Lumina Talks</a>, and <a href="https://theaitalks.org/">The AI Talks</a> on "3D World Models for Robotics".</li>
                 <li>[Feb 2026] Guest Lecture for <a href="https://courses.cs.washington.edu/courses/cse571/26wi/">AI-Robotics</a> at <a href="https://rse-lab.cs.washington.edu/">University of Washington</a>.</li>
@@ -250,7 +251,9 @@
           <br>
           <em>International Conference on Learning Representations (ICLR)</em>, 2026
           <br>
-          <b><span class="award-highlight">Oral Presentation</span></b> at the ICLR 2026 Workshop on World Models
+          <b><span class="award-highlight">Outstanding Paper Award</span></b> at the ICLR 2026 Workshop on World Models
+          <br>
+          <b><span class="award-highlight">Outstanding Paper Award</span></b> at the ICLR 2026 Workshop on Lifelong Agents
           <br>
           <a href="https://enact-embodied-cognition.github.io/">Project Page</a> /
           <a href="https://arxiv.org/abs/2511.20937">Paper</a> /
@@ -575,6 +578,8 @@
               <a id="honors"></a>
               <heading>Selected Honors</heading>
               <div class="cv-list honors-list">
+                <div class="cv-entry"><span class="cv-year">2026</span><span>Outstanding Paper Award at the ICLR 2026 Workshop on World Models</span></div>
+                <div class="cv-entry"><span class="cv-year">2026</span><span>Outstanding Paper Award at the ICLR 2026 Workshop on Lifelong Agents</span></div>
                 <div class="cv-entry"><span class="cv-year">2025</span><span>Best Paper Award Finalist at ICRA 2025</span></div>
                 <div class="cv-entry"><span class="cv-year">2025</span><span>Best Paper Award on Robot Perception Finalist at ICRA 2025</span></div>
                 <div class="cv-entry"><span class="cv-year">2025</span><span>Finalist for NVIDIA Graduate Fellowship</span></div>
@@ -893,7 +898,8 @@
         '.research-areas',
         '.news-list',
         '.news-toggle',
-        '.projects-list tbody > tr',
+        '.projects-list .paper-media',
+        '.projects-list tbody > tr > td:last-child',
         '.cv-entry',
         '.service-group',
         '.service-list li',
@@ -914,16 +920,57 @@
       }
 
       targets.forEach(function (target, index) {
+        var projectRow = target.closest ? target.closest('.projects-list tbody > tr') : null;
+        var projectDelay = target.classList.contains('paper-media') ? 0 : 75;
         target.classList.add('scroll-reveal');
-        target.style.setProperty('--scroll-reveal-delay', ((index % 3) * 45) + 'ms');
+        target.style.setProperty('--scroll-reveal-delay', projectRow ? (projectDelay + 'ms') : (((index % 3) * 45) + 'ms'));
       });
+
+      function revealTarget(target) {
+        if (target.classList.contains('is-visible')) {
+          return;
+        }
+
+        if (target.tagName === 'VIDEO' && target.classList.contains('js-lazy-video') && target.readyState < 2) {
+          var didRevealVideo = false;
+          var revealVideo = function () {
+            if (didRevealVideo) {
+              return;
+            }
+            didRevealVideo = true;
+            target.classList.add('is-visible');
+          };
+          target.addEventListener('loadeddata', revealVideo, { once: true });
+          target.addEventListener('canplay', revealVideo, { once: true });
+          target.addEventListener('error', revealVideo, { once: true });
+          window.setTimeout(revealVideo, 550);
+          return;
+        }
+
+        if (target.tagName === 'IMG' && !target.complete) {
+          var didRevealImage = false;
+          var revealImage = function () {
+            if (didRevealImage) {
+              return;
+            }
+            didRevealImage = true;
+            target.classList.add('is-visible');
+          };
+          target.addEventListener('load', revealImage, { once: true });
+          target.addEventListener('error', revealImage, { once: true });
+          window.setTimeout(revealImage, 550);
+          return;
+        }
+
+        target.classList.add('is-visible');
+      }
 
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) {
             return;
           }
-          entry.target.classList.add('is-visible');
+          revealTarget(entry.target);
           observer.unobserve(entry.target);
         });
       }, {

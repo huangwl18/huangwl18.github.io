@@ -627,8 +627,7 @@ table.project-table td:first-of-type {
 }
 
 .experience-list {
-  margin-top: 10px;
-  border-top: 1px solid var(--cv-divider);
+  margin-top: 8px;
 }
 
 .experience-entry {
@@ -637,10 +636,11 @@ table.project-table td:first-of-type {
   column-gap: 16px;
   align-items: start;
   padding: 14px 0;
-  border-bottom: 1px solid var(--cv-divider);
+  border-top: 1px solid var(--cv-divider);
 }
 
 .experience-entry:first-child {
+  border-top: 0;
   padding-top: 4px;
 }
 
