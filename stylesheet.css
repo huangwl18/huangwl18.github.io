@@ -497,6 +497,11 @@ table.project-table td:first-of-type {
   transition: transform 0.22s ease;
 }
 
+.projects-list tbody tr.scroll-reveal {
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--scroll-reveal-delay, 0ms);
+}
+
 .projects-list tbody tr td {
   background: transparent;
   transition: background 0.22s ease, box-shadow 0.22s ease;
