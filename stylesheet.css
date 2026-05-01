@@ -752,10 +752,27 @@ table.project-table td:first-of-type {
 
 @media (max-width: 700px) {
   body {
-    margin-top: 18px;
-    margin-bottom: 32px;
+    margin: 18px 0 32px 0;
     font-size: 15px;
     line-height: 155%;
+  }
+
+  body > table,
+  body > table > tbody,
+  body > table > tbody > tr,
+  body > table > tbody > tr > td,
+  body > table > tbody > tr > td > table,
+  body > table > tbody > tr > td > table > tbody,
+  body > table > tbody > tr > td > table > tbody > tr,
+  body > table > tbody > tr > td > table > tbody > tr > td {
+    box-sizing: border-box;
+    max-width: 100% !important;
+  }
+
+  body > table,
+  body > table > tbody > tr > td > table {
+    width: 100% !important;
+    table-layout: fixed;
   }
 
   heading {
@@ -838,6 +855,10 @@ table.project-table td:first-of-type {
 
   .projects-filter-nav {
     font-size: 14px;
+  }
+
+  .research-video-title {
+    white-space: normal;
   }
 
   .projects-list,
