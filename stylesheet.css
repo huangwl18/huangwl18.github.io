@@ -186,6 +186,11 @@ note {
 
 sub.work-ref {
   font-size: 0.75em;
+  /* Offset the pointers visually without increasing the paragraph's line height. */
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  bottom: -0.25em;
 }
 
 .research-intro {
@@ -1149,8 +1154,14 @@ note,
   filter: none;
 }
 
+.research-intro,
+.research-areas {
+  letter-spacing: -0.08px;
+}
+
 .research-intro {
   margin: 0 0 8px;
+  line-height: 1.8;
 }
 
 .research-areas {
