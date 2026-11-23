@@ -1103,6 +1103,135 @@ note,
   filter: none;
 }
 
+.profile-photo-toggle {
+  position: relative;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  aspect-ratio: 1;
+  appearance: none;
+  background: transparent;
+  color: inherit;
+  line-height: 0;
+  opacity: 1;
+}
+
+.profile-photo-toggle:not(:disabled) {
+  cursor: pointer;
+}
+
+.profile-photo-toggle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo-previous {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+}
+
+.is-showing-previous .profile-photo-previous {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.profile-portrait {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.portrait-downloads {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 2;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.portrait-downloads summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  list-style: none;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: #292721;
+  cursor: pointer;
+}
+
+.portrait-downloads summary svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+  filter: drop-shadow(0 1px 1px #fff9);
+}
+
+.portrait-downloads summary:hover svg,
+.portrait-downloads summary:focus-visible svg,
+.portrait-downloads[open] summary svg { opacity: 1; }
+
+.portrait-downloads summary::-webkit-details-marker { display: none; }
+.portrait-downloads summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.portrait-download-panel {
+  position: absolute;
+  right: 0;
+  width: 208px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 6px 10px;
+  border: 1px solid #d8d4c9;
+  border-radius: 4px;
+  background: #fffefa;
+  color: #292721;
+  box-shadow: 0 3px 14px #28251520;
+  font-size: 13px;
+}
+
+.portrait-download-panel > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portrait-download-panel span { flex: 1; }
+.portrait-download-panel a { padding: 9px 0; white-space: nowrap; }
+
+@media (hover: hover) and (pointer: fine) {
+  .portrait-downloads:not([open]) summary { opacity: 0; }
+  .profile-portrait:hover .portrait-downloads summary,
+  .profile-portrait:focus-within .portrait-downloads summary { opacity: 1; }
+}
+
+@media (hover: none), (any-pointer: coarse) {
+  .portrait-downloads summary { width: 44px; height: 44px; }
+  .portrait-downloads:not([open]) summary { opacity: 1; }
+}
+
+@media (max-width: 700px) {
+  .profile-portrait { width: min(58vw, 220px); margin: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-photo-previous {
+    transition: none;
+  }
+}
+
 .twitter-follow-container {
   width: 240px;
   margin: 12px auto 0 !important;
