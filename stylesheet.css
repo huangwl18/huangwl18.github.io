@@ -1547,7 +1547,8 @@ note,
 
   .profile-photo-mobile {
     width: min(58vw, 220px) !important;
-    height: auto !important;
+    /* A definite height keeps WebKit from using the child image's intrinsic height. */
+    height: min(58vw, 220px) !important;
     max-width: 220px !important;
     margin: 0 !important;
   }
