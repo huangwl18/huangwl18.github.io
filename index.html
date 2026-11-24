@@ -32,21 +32,7 @@
                 <name>Wenlong Huang</name>
               </p>
               <div class="mobile-photo-wrap">
-                <div class="profile-portrait">
-                  <button type="button" class="profile-photo profile-photo-mobile profile-photo-toggle" aria-label="Show previous portrait of Wenlong Huang" aria-pressed="false" disabled>
-                    <img alt="" src="images/img-profile-current.webp" width="640" height="640" decoding="async" fetchpriority="high">
-                    <img alt="" src="images/img-profile-previous.webp" width="640" height="640" decoding="async" class="profile-photo-previous">
-                  </button>
-                  <details class="portrait-downloads">
-                    <summary aria-label="Open or save headshots" title="Open or save headshots">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>
-                    </summary>
-                    <div class="portrait-download-panel">
-                      <div><span>Current</span><a href="images/wenlong-huang-current.jpg" target="_blank" rel="noopener" aria-label="Open current headshot in a new tab">Open ↗</a><a href="images/wenlong-huang-current.jpg" download="wenlong-huang-current.jpg" aria-label="Save current headshot as JPEG">Save</a></div>
-                      <div><span>Previous</span><a href="images/img-profile.jpg" target="_blank" rel="noopener" aria-label="Open previous headshot in a new tab">Open ↗</a><a href="images/img-profile.jpg" download="wenlong-huang-previous.jpg" aria-label="Save previous headshot as JPEG">Save</a></div>
-                    </div>
-                  </details>
-                </div>
+                <img class="profile-photo profile-photo-mobile" alt="Wenlong Huang" src="images/img-profile-current.webp" width="640" height="640" decoding="async" fetchpriority="high">
               </div>
               <p>I am a final-year Ph.D. candidate in Computer Science at <a href="https://www.stanford.edu/">Stanford University</a>, working on AI and robotics.
                 I am advised by <a class="person-link" href=https://profiles.stanford.edu/fei-fei-li>Fei-Fei Li</a> as part of the <a href=https://svl.stanford.edu>Stanford Vision and Learning Lab (SVL)</a>.
@@ -73,21 +59,7 @@
               </p>
             </td>
             <td class="photo-col" style="padding:2.5% 2.5% 2.5% 1.25%;width:26%;max-width:40%;text-align:center">
-              <div class="profile-portrait">
-                <button type="button" class="profile-photo profile-photo-toggle" aria-label="Show previous portrait of Wenlong Huang" aria-pressed="false" disabled>
-                  <img alt="" src="images/img-profile-current.webp" width="640" height="640" decoding="async" fetchpriority="high">
-                  <img alt="" src="images/img-profile-previous.webp" width="640" height="640" decoding="async" class="profile-photo-previous">
-                </button>
-                <details class="portrait-downloads">
-                  <summary aria-label="Open or save headshots" title="Open or save headshots">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>
-                  </summary>
-                  <div class="portrait-download-panel">
-                    <div><span>Current</span><a href="images/wenlong-huang-current.jpg" target="_blank" rel="noopener" aria-label="Open current headshot in a new tab">Open ↗</a><a href="images/wenlong-huang-current.jpg" download="wenlong-huang-current.jpg" aria-label="Save current headshot as JPEG">Save</a></div>
-                    <div><span>Previous</span><a href="images/img-profile.jpg" target="_blank" rel="noopener" aria-label="Open previous headshot in a new tab">Open ↗</a><a href="images/img-profile.jpg" download="wenlong-huang-previous.jpg" aria-label="Save previous headshot as JPEG">Save</a></div>
-                  </div>
-                </details>
-              </div>
+              <img class="profile-photo" alt="Wenlong Huang" src="images/img-profile-current.webp" width="640" height="640" decoding="async" fetchpriority="high">
               <div class="twitter-follow-container" style="margin-top:8px;">
                 <a href="https://twitter.com/wenlong_huang?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @wenlong_huang</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -848,70 +820,6 @@
 
   </table>
   <script>
-    function initProfilePhotos() {
-      var portraits = document.querySelectorAll('.profile-photo-toggle');
-      var previousSelected = false;
-      var hoverSupported = window.matchMedia('(any-hover: hover) and (any-pointer: fine)');
-
-      function render() {
-        portraits.forEach(function (portrait) {
-          portrait.classList.toggle('is-showing-previous', previousSelected);
-          portrait.setAttribute('aria-pressed', String(previousSelected));
-          portrait.setAttribute('aria-label', 'Show ' + (previousSelected ? 'current' : 'previous') + ' portrait of Wenlong Huang');
-        });
-      }
-
-      portraits.forEach(function (portrait) {
-        var previousImage = portrait.querySelector('.profile-photo-previous');
-        var region = portrait.closest('.profile-portrait');
-        var pointerType = '';
-        function toggle() {
-          previousSelected = !previousSelected;
-          render();
-        }
-        function enable() {
-          portrait.disabled = false;
-        }
-        if (previousImage.complete && previousImage.naturalWidth > 0) {
-          enable();
-        } else {
-          previousImage.addEventListener('load', enable, { once: true });
-        }
-
-        portrait.addEventListener('pointerenter', function (event) {
-          // Moving between the photo and its download controls is one visit.
-          if (event.relatedTarget instanceof Node && region.contains(event.relatedTarget)) return;
-          if (!portrait.disabled && event.pointerType === 'mouse' && hoverSupported.matches) toggle();
-        });
-        portrait.addEventListener('pointerdown', function (event) {
-          pointerType = event.pointerType;
-        });
-        portrait.addEventListener('click', function (event) {
-          var activatedBy = event.pointerType || pointerType;
-          pointerType = '';
-          // Mouse entry already toggled; its following click must not undo it.
-          // Touch/pen clicks and keyboard activation each toggle exactly once.
-          if (event.detail !== 0 && activatedBy === 'mouse' && hoverSupported.matches) return;
-          toggle();
-        });
-      });
-
-      var photoMenus = document.querySelectorAll('.portrait-downloads');
-      photoMenus.forEach(function (menu) {
-        menu.addEventListener('keydown', function (event) {
-          if (event.key === 'Escape' && menu.open) {
-            menu.open = false;
-            menu.querySelector('summary').focus();
-          }
-        });
-      });
-      document.addEventListener('click', function (event) {
-        photoMenus.forEach(function (menu) {
-          if (!menu.contains(event.target)) menu.open = false;
-        });
-      });
-    }
-
     function initNewsFormatting() {
       var newsList = document.getElementById('news-list');
       var toggleButton = document.getElementById('news-toggle');
@@ -1167,7 +1075,6 @@
     }
 
     document.addEventListener('DOMContentLoaded', function () {
-      initProfilePhotos();
       initNewsFormatting();
       initScrollReveals();
       initLazyProjectVideos();
